@@ -16,7 +16,7 @@ var myHeaders = {
 };
 
 fetch(baseUrl + '/board', {
-	headers: myHeaders
+		headers: myHeaders
 	})
 	.then(function(resp) {
 		return resp.json();

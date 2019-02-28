@@ -15,7 +15,9 @@ var myHeaders = {
 	'X-Auth-Token': 'cff14b2f5b96109f01f247bb02c5ae1b'
 };
 
-fetch(baseUrl + '/board', { headers: myHeaders })
+fetch(baseUrl + '/board', {
+	headers: myHeaders
+	})
 	.then(function(resp) {
 		return resp.json();
 	})

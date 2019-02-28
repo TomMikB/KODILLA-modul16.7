@@ -37,7 +37,10 @@ Column.prototype = {
 	},
 	removeColumn: function() {
 		var self = this;
-		fetch(baseUrl + '/column/' + self.id, { method: 'DELETE', headers: myHeaders })
+		fetch(baseUrl + '/column/' + self.id, {
+			method: 'DELETE',
+			headers: myHeaders
+		})
 		.then(function(resp) {
 			return resp.json();
 		})
